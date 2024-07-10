@@ -8,51 +8,67 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/script.js"></script>
         <link href="css/top.css" rel="stylesheet">
-        <!--<link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=M+PLUS+1p&display=swap" rel="stylesheet">
-        <!--<script src="js/toggle-menu.js"></script>-->
+
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="css/photo.css">
     </head>
     <body>
-        <header class="header">
-            <div class="header-inner">
-                <button class="toggle-menu-button"></button>
-                <div class="header-site-menu">
-                    <nav class="site-menu">
-                        <ul>
-                            <li><a href="concept.html">キャラ</a></li>
-                            <li><a href="members.html">動画</a></li>
-                            <li><a href="access.html">制作会社</a></li>
-                        </ul>
-                    </nav>
+        <div class="container">
+            <header id="header">
+                <div class="header-inner">
+                    <button class="toggle-menu-button"></button>
+                    <div class="header-area">
+                        <h1>大紹介! <span>ボーカロイド</span></h1>
+                        <!-- <p>説明</p> -->
+                        <div class="header-site-menu">
+                            <nav class="site-menu">
+                                <ul>
+                                    <li><a href="top.html">トップ</a></li>
+                                    <li><a href="top.html">キャラ</a></li>
+                                    <li><a href="top.html">制作者</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </header>
-        <main class="main">
-            <nav class="floating">
-                <ul>
-                    <li><a href="#">トップ</a></li>
-                </ul>
-            </nav>
+            </header>
+
+            <!--写真-->
             <div class="first-view">
+                <h1 class="first-view-text">見出し <span>タイトル</span></h1>
+            </div>
+            <ul class="slider">
+                <li class="slider-item slider-item01"></li>
+                <li class="slider-item slider-item02"></li>
+                <li class="slider-item slider-item03"></li>
+            </ul>
+        </div>
+        <main class="main">
+            <!--<div class="first-view">
                 <div class="first-view-text">
                     <h1>名城大学情報工学部</h1>
                     <p>想像以上を，創造しよう．</p>
                 </div>
-            </div>
+            </div>-->
         </main>
         <footer class="footer">
             <nav class="site-menu">
                 <ul>
-                    <li><a href="concept.html">キャラ</a></li>
-                    <li><a href="members.html">動画</a></li>
-                    <li><a href="access.html">制作会社</a></li>
+                    <li><a href="top.html">トップ</a></li>
+                    <li><a href="top.html">キャラ</a></li>
+                    <li><a href="top.html">制作者</a></li>
                 </ul>
             </nav>
-            <p class="copyright"><small>&copy;らりるれろ</small></p>
+            <p class="copyright"><small>&copy;team 17</small></p>
         </footer>
+
+        <!--ヘッダー用のコード-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="js/photo.js"></script>
+        <!--ハンバーガーメニュー用のコード-->
     </body>
 </html>
