@@ -150,15 +150,42 @@ img { /*7*/
       }*/
 }
 
-/* 800px以上の画面幅では .first-view-text を非表示にする */
-.first-view-text {
-    display: none;
-}
-
 @media (max-width: 800px) {
-    /* ヘッダーエリアの非表示 */
-    .header-area {
+    /* ヘッダーエリア */
+    #header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        height: 80px;
+        z-index: 10;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        width: 100%; /* 追加 */
+    }
+
+    .header-inner {
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 100%;
+        position: relative;
+        width: 100%; /* 追加 */
+    }
+
+    .header-site-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        color: #ffffff;
+        background-color: #736e62;
+        padding-top: 30px;
+        padding-bottom: 50px;
         display: none;
+    }
+
+    .header-site-menu.is-show {
+        display: block;
     }
 
     /* ハンバーガーメニュー */
@@ -170,7 +197,7 @@ img { /*7*/
         display: block;
         width: 44px;
         height: 34px;
-        background-image: url(../images/common/icon-menu.png);
+        background-image: url(../images/top/icon-menu.png);
         background-size: 50%;
         background-position: center;
         background-repeat: no-repeat;
@@ -181,7 +208,7 @@ img { /*7*/
     }
 
     /* ハンバーガーメニューの設定 */
-    .header-inner {
+    /*.header-inner {
         justify-content: space-between;
     }
 
@@ -218,9 +245,9 @@ img { /*7*/
 
     .header-site-menu nav ul li a {
         font-size: 1.2rem;
-    }
+    }*/
 
-    /* 写真の上に見出しを表示 */
+    /* 写真の上に見出しを表示　不要 */
     /*.first-view {
         position: relative;
         width: 100%;

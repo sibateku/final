@@ -74,18 +74,20 @@
     background: #333;
 }
 
-/*@media (max-width: 800px) {
+@media (max-width: 800px) {
     /* 写真を幅全体に設定 */
-    /*.slider {
+    .slider {
+        position: relative;
+        z-index: 1;
         height: 100vh;
     }
 
-    .slider-item {
+    /*.slider-item {
         height: 100vh;
         background-size: cover;
     }
 
     .slick-prev, .slick-next {
         top: 50%;
-    }
-}*/
+    }*/
+}
