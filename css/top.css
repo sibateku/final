@@ -6,18 +6,34 @@
     height: 100vh;
 }
 
+/* ヘッダー設定 */
 #header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 500px; /* もともと230px */
+    width: 30%; /* ヘッダーの枠幅 */
     background-color: #f0f0f0;
     padding: 20px;
 }
 
+.header-inner {
+    max-width: 1200px;
+    height: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .header-area {
     width: 100%;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #header h1 {
@@ -38,45 +54,32 @@
     letter-spacing: 0.3em;
 }
 
-/*
-.first-view {
-    height: calc(100vh - 110px);
-    background-image: url(../images/index/bg_main.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+/* ヘッダーのサイトメニュー設定 */
+.site-menu ul { /*7*/
     display: flex;
-    align-items: center;
+    flex-direction: column; /* 追加row */
 }
 
-.first-view-text {
-    width: 100%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 40px;
-    padding-bottom: 80px;
-    color: #ffffff;
-    font-weight: bold;
-    text-shadow: 1px 1px 10px #4b2c14;
+.site-menu ul li { /*7*/
+    margin-left: 20px;
+    margin-right: 20px;
+    margin: 10px 0;
 }
 
-.first-view-text h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 56px;
-    line-height: 72px;
+.site-menu ul li a {
+    writing-mode: horizontal-tb; /* 追加 */
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+      
+    /*.m-plus-1p-regular {
+        font-family: "M PLUS 1p", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }*/
 }
 
-.first-view-text p {
-    font-size: 18px;
-    margin-top: 20px;
-}
-*/
-.lead { /*8*/
-    max-width: 1200px;
-    margin: 60px auto;
-}
-
+/* 授業 */
 *,
 ::before,
 ::after { /*7*/
@@ -104,50 +107,6 @@ body { /*7*/
 
 img { /*7*/
     max-width: 100%;
-}
-
-.header-inner { /*7*/
-    max-width: 1200px;
-    height: 110px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 40px;
-    padding-right: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.toggle-menu-button { /*7*/
-    display: none;
-}
-
-/*.header-logo {
-    display: block;
-    width: 170px;
-}*/
-
-.site-menu ul { /*7*/
-    display: flex;
-    flex-direction: row; /* 追加 */
-}
-
-.site-menu ul li { /*7*/
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.site-menu ul li a {
-    writing-mode: horizontal-tb; /* 追加 */
-    font-family: "Dela Gothic One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-      
-    /*.m-plus-1p-regular {
-        font-family: "M PLUS 1p", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-      }*/
 }
 
 @media (max-width: 800px) {
@@ -184,52 +143,6 @@ img { /*7*/
         display: none;
     }
 
-    .header-site-menu.is-show {
-        display: block;
-    }
-
-    /* ハンバーガーメニュー */
-    .toggle-menu-button {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        z-index: 1000;
-        display: block;
-        width: 44px;
-        height: 34px;
-        background-image: url(../images/top/icon-menu.png);
-        background-size: 50%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: transparent;
-        border: none;
-        border-radius: 0;
-        outline: none;
-    }
-
-    /* ハンバーガーメニューの設定 */
-    /*.header-inner {
-        justify-content: space-between;
-    }
-
-    .header-site-menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #ffffff;
-        z-index: 10;
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .header-site-menu.is-show {
-        display: flex;
-    }
-
     .header-site-menu nav {
         margin-bottom: 20px;
     }
@@ -245,30 +158,13 @@ img { /*7*/
 
     .header-site-menu nav ul li a {
         font-size: 1.2rem;
-    }*/
-
-    /* 写真の上に見出しを表示　不要 */
-    /*.first-view {
-        position: relative;
-        width: 100%;
-        height: auto;
     }
 
-    .first-view-text {
+    .header-site-menu.is-show {
         display: block;
-        position: absolute;
-        top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        color: white;
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 10px;
-        border-radius: 5px;
-        font-size: 1.5rem;
-        z-index: 100;
-    }*/
+    }
 
-    /* その他 */
+    /* フッターのサイトメニュー */
     .site-menu ul {
         display: block;
         text-align: center;
@@ -278,6 +174,9 @@ img { /*7*/
         margin-top: 20px;
     }
 
+    .footer {
+        margin-top: 80px; /* 追加 */
+    }
     .copyright { /*9*/
         margin-top: 50px;
     }
@@ -292,12 +191,6 @@ img { /*7*/
     flex-direction: column;
     align-items: center;
 }
-
-/*.footer-logo {
-    display: block;
-    width: 235px;
-    margin-top: 90px;
-}*/
 
 .copyright { /*7*/
     font-size: 14pt;

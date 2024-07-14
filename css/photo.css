@@ -4,6 +4,7 @@
     height: 100vh;
     flex-grow: 1; /* 追加 */
     overflow: hidden; /* 追加 */
+    width: 70%; /* 写真の枠幅 */
 }
 
 .slider-item01 {
@@ -80,14 +81,15 @@
         position: relative;
         z-index: 1;
         height: 100vh;
+        margin-top: 80px; /* 追加 */
     }
 
-    /*.slider-item {
+    .slider-item {
         height: 100vh;
         background-size: cover;
     }
 
     .slick-prev, .slick-next {
         top: 50%;
-    }*/
+    }
 }
