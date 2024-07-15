@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 755px; /* ヘッダーの枠幅 */
+    height: 1500px;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+#main {
+    flex-grow: 1;
+    width: 70%;
+}
+
+.first-view-text {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    padding-left: 40px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.first-view-text h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 56px;
+    line-height: 72px;
+}
+
+.lead p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.first-view-text image {
+    text-align: center;
+}
+
+.footer {
+    color: #ffffff;
+    background-color: #24211b;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1000px;
+}
