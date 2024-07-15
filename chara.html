@@ -6,25 +6,28 @@
         <meta name="description" content="キャラ紹介">
         <meta name="viewport" content="width=device-width">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="js/script.js"></script>
+        <link href="css/top.css" rel="stylesheet">
         <link href="css/chara.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=M+PLUS+1p&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="css/button.css">
     </head>
     <body>
         <div class="container">
             <header id="header">
                 <div class="header-inner">
-                    <button class="toggle-menu-button"></button>
+                    <div class="openbtn"><span></span><span></span><span></span></div>
                     <div class="header-area">
                         <h1>大紹介! <span>ボーカロイド</span></h1>
                         <div class="header-site-menu">
                             <nav class="site-menu">
                                 <ul>
-                                    <li><a href="index.html">トップ</a></li>
-                                    <li><a href="chara.html">キャラ</a></li>
-                                    <li><a href="P.html">制作者</a></li>
+                                    <li><a href="index.html">トップページ</a></li>
+                                    <li><a href="chara.html">キャラクター</a></li>
+                                    <li><a href="P.html">ボカロP</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -85,14 +88,16 @@
         <footer class="footer">
             <nav class="site-menu">
                 <ul>
-                    <li><a href="index.html">トップ</a></li>
-                    <li><a href="chara.html">キャラ</a></li>
-                    <li><a href="P.html">制作者</a></li>
+                    <li><a href="index.html">トップページ</a></li>
+                    <li><a href="chara.html">キャラクター</a></li>
+                    <li><a href="P.html">ボカロP</a></li>
                 </ul>
             </nav>
             <p class="copyright"><small>「初音ミク」「巡音ルカ」はクリプトン・フューチャー・メディア株式会社の著作物です。<br>
                 &copy;Crypton Future Media, INC. www.piapro.net<br><br>&copy;team 17</small></p>
         </footer>
-
+        
+        <!--ハンバーガーメニュー用のコード-->
+        <script src="js/button.js"></script>
     </body>
 </html>
