@@ -34,8 +34,8 @@ body { /*7*/
 }
 
 .logo {  /*追加*/
-    width: 303px; /*変更*/
-    height: 303px; /*変更*/
+    width: auto; /*変更*/
+    height: 15vw; /*変更*/
     padding-left: 20px; /*追加*/
 }
 
@@ -51,7 +51,7 @@ body { /*7*/
 
 @media (max-width: 800px) {
     .logo{
-        width: 80%;
+        width: 30vw;
         height: auto;
     }
     
