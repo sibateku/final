@@ -8,15 +8,19 @@
 }
 
 .slider-item01 {
-    background:url(../images/top/tamago.jpg);
+    background:url(../images/top/gubbai.jpg);
 }
 
 .slider-item02 {
-    background:url(../images/top/pan.jpg);
+    background:url(../images/top/tennsei.jpg);
 }
 
 .slider-item03 {
-    background:url(../images/top/fluit.jpg);
+    background:url(../images/top/vannp.jpg);
+}
+
+.slider-item04 {
+    background:url(../images/top/ゴーストルール.jpg);
 }
 
 .slider-item {
