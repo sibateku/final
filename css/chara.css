@@ -11,13 +11,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 500px; /* もともと230px */
+    width: 30%; /* ヘッダーの枠幅 */
     background-color: #f0f0f0;
     padding: 20px;
 }
 
+.header-inner {
+    max-width: 1200px;
+    height: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .header-area {
     width: 100%;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #header h1 {
@@ -102,30 +117,19 @@ img { /*7*/
     height: 303px;
 }
 
-.header-inner { /*7*/
-    max-width: 1200px;
-    height: 110px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 40px;
-    padding-right: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .toggle-menu-button { /*7*/
     display: none;
 }
 
 .site-menu ul { /*7*/
     display: flex;
-    flex-direction: row; /* 追加 */
+    flex-direction: column; /* 追加 */
 }
 
 .site-menu ul li { /*7*/
     margin-left: 20px;
     margin-right: 20px;
+    margin: 10px 0;
 }
 
 .site-menu ul li a {
@@ -227,6 +231,23 @@ img { /*7*/
         padding-top: 30px;
         padding-bottom: 50px;
         display: none;
+    }
+
+    .header-site-menu nav {
+        margin-bottom: 20px;
+    }
+
+    .header-site-menu nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-site-menu nav ul li {
+        margin: 10px 0;
+    }
+
+    .header-site-menu nav ul li a {
+        font-size: 1.2rem;
     }
 
     .header-site-menu.is-show {
