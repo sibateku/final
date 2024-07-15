@@ -34,8 +34,8 @@ body { /*7*/
 }
 
 .logo { /*追加*/
-    width: 600px;
-    height: 250px;
+    width: auto;
+    height: 12vw;
 }
 
 .contents {
@@ -100,8 +100,8 @@ body { /*7*/
 
 @media (max-width: 800px) {
     .logo{
-        width: 80%;
-        height: auto;
+        width: auto;
+        height: 20vw;
     }
     
     .first-view {
